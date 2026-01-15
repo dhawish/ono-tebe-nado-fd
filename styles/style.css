@@ -21,12 +21,25 @@
 }
 
 .lots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 27px;
   margin: 180px 24px 60px 24px;
   background-color: #fff;
 }
 
 .about {
-  margin: 60px 24px 180px 24px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 240px 1fr;
+  grid-template-areas:
+   "about__logo about__title"
+   ". about__text";
+  justify-items: center;
+  gap: 8px 72px;
+  margin: 120px 24px 180px 24px;
+  padding: 35px 0px 0px 47px;
   background-color: #fff;
 }
 
@@ -170,13 +183,6 @@
 
 /* Стили для секции с лотами*/
 
-.lots {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 27px;
-}
-
 .lots__heading {
   padding: 3.5px 173px 3.5px 40px;
   font-weight: 700;
@@ -259,19 +265,6 @@
 }
 
 /* стили для секции about */
-
-.about {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 240px 1fr;
-  grid-template-areas:
-   "about__logo about__title"
-   ". about__text";
-  justify-items: center;
-  gap: 8px 72px;
-  margin: 120px 24px 180px 24px;
-  padding: 35px 0px 0px 47px;
-}
 
 .about__logo {
   display: flex;
