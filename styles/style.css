@@ -265,8 +265,8 @@
   grid-template-columns: 240px 1fr;
   grid-template-rows: 240px 1fr;
   grid-template-areas:
-    "about__logo about__title"
-    ". about__text";
+   "about__logo about__title"
+   ". about__text";
   justify-items: center;
   gap: 8px 72px;
   margin: 120px 24px 180px 24px;
